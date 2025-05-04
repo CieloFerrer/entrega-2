@@ -1,0 +1,46 @@
+/* Encabezado */
+header{
+    background-color: #f4f0ed;
+    font-family: lato;
+    font-weight: bold;
+}
+
+header .menu ul{
+    list-style: none;
+}
+
+
+/* Contenido principal */
+main{
+    background-color: #f4f0ed;
+    font-family: lato;
+}
+
+h2{
+    font-weight: bold;
+}
+
+main .banner{
+    text-align: center;
+}
+
+.oficinas{
+    text-align: center;
+}
+
+button{
+    color: white;
+    background-color: #f4a3b2;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* Pie de página */
+footer{
+    background-color: #bdcedd;
+    font-family: lato;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
