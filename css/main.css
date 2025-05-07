@@ -1,46 +1,55 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Encabezado */
-header{
-    background-color: #f4f0ed;
-    font-family: lato;
-    font-weight: bold;
+header {
+  background-color: #f4f0ed;
+  font-family: 'Lato', sans-serif;
 }
-
-header .menu ul{
-    list-style: none;
-}
-
 
 /* Contenido principal */
-main{
-    background-color: #f4f0ed;
-    font-family: lato;
+main {
+  background-color: #f4f0ed;
+  font-family: 'Lato', sans-serif;
+  padding: 50px;
 }
 
-h2{
-    font-weight: bold;
+.intro {
+  max-width: 50%;
+  padding-bottom: 50px;
 }
 
-main .banner{
-    text-align: center;
+@media (max-width: 768px) {
+  .intro{
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.oficinas{
-    text-align: center;
+main .banner {
+  text-align: center;
 }
 
-button{
-    color: white;
-    background-color: #f4a3b2;
-    border: none;
-    border-radius: 10px;
+.mi-boton {
+  color: white;
+  background-color: #f4a3b2;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
 }
-
 
 /* Pie de página */
-footer{
-    background-color: #bdcedd;
-    font-family: lato;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+footer {
+  background-color: #bdcedd;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #202529;
+  padding-bottom: 1px;
+  padding-top: 15px;
 }
