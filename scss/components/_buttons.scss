@@ -1,0 +1,6 @@
+@use '../abstracts/mixin' as mix;
+@use '../abstracts/variables' as var;
+
+.card .btn-primary {
+  @include mix.estilo-boton(var.$boton-estilos);
+}

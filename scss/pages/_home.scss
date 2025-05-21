@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as v;
+
+// Encabezado
+header {
+  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
+  background-size: 200% 100%;
+  background-position: left center;
+  animation: gradiente-suave 20s ease-in-out infinite;
+  font-family: v.$fuente-principal;
+}
+@keyframes gradiente-suave {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center;
+  }
+  100% {
+    background-position: left center;
+  }
+}
+
+// Contenido principal
+main {
+  background-color: v.$color-fondo;
+  font-family: v.$fuente-principal;
+  padding: 50px;
+
+  // Sección de introducción
+  .intro {
+    max-width: 50%;
+    padding-bottom: 50px;
+
+    // Estilos responsivos para móviles
+    @media (max-width: 768px) {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+// Estilos del botón personalizado
+.mi-boton {
+  color: #202529;
+  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
+  background-size: 200% 100%;
+  background-position: left center;
+  animation: gradiente-suave 20s ease-in-out infinite;
+
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-position: right center;
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Pie de página
+footer {
+  background-color: v.$color-footer;
+  font-family: v.$fuente-principal;
+  font-weight: bold;
+  text-align: center;
+  color: v.$color-texto-footer;
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
