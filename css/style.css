@@ -73,28 +73,64 @@ h6 {
 }
 
 header {
-  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
-  background-size: 200% 100%;
-  background-position: left center;
-  animation: gradiente-suave 20s ease-in-out infinite;
+  background: #222222;
   font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #cbdeec;
+}
+header nav .nav-link,
+header nav .navbar-brand {
+  color: #cbdeec;
+}
+header nav .nav-link:hover,
+header nav .navbar-brand:hover {
+  color: #f9e2e2;
+}
+header nav .navbar-toggler {
+  border: 1px solid #cbdeec;
+  background-color: transparent;
+  width: 45px;
+  height: 40px;
+}
+header nav .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  width: 20px;
+  height: 2px;
+  background-color: #cbdeec;
+  position: relative;
+  display: block;
+}
+header nav .navbar-toggler .navbar-toggler-icon::before, header nav .navbar-toggler .navbar-toggler-icon::after {
+  content: "";
+  display: block;
+  background-color: #cbdeec;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+}
+header nav .navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+header nav .navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
 }
 
-@keyframes gradiente-suave {
-  0% {
-    background-position: left center;
-  }
-  50% {
-    background-position: right center;
-  }
-  100% {
-    background-position: left center;
-  }
-}
 main {
-  background-color: #f3efec;
+  background: linear-gradient(90deg, #9d8d8d, #000000, #b0c1cd);
+  background-size: 200% 100%;
+  background-position: left center;
+  animation: gradiente-suave 50s ease-in-out infinite;
   font-family: "Lato", sans-serif;
-  padding: 50px;
+  padding: 40px;
+  color: white;
+}
+main h1 {
+  color: #f9e2e2;
+}
+main h2 {
+  color: #cbdeec;
 }
 main .intro {
   max-width: 50%;
@@ -108,6 +144,17 @@ main .intro {
   }
 }
 
+@keyframes gradiente-suave {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center;
+  }
+  100% {
+    background-position: left center;
+  }
+}
 .mi-boton {
   color: #202529;
   background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
@@ -127,11 +174,11 @@ main .intro {
 }
 
 footer {
-  background-color: #bdcedd;
+  background-color: #222222;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   text-align: center;
-  color: #202529;
+  color: #cbdeec;
   padding-top: 15px;
   padding-bottom: 1px;
 }

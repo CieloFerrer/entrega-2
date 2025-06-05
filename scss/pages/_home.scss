@@ -2,29 +2,74 @@
 
 // Encabezado
 header {
-  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
-  background-size: 200% 100%;
-  background-position: left center;
-  animation: gradiente-suave 20s ease-in-out infinite;
+  background: v.$color-header-footer;
   font-family: v.$fuente-principal;
-}
-@keyframes gradiente-suave {
-  0% {
-    background-position: left center;
-  }
-  50% {
-    background-position: right center;
-  }
-  100% {
-    background-position: left center;
+  font-weight: bold;
+  text-align: center;
+  color: v.$color-texto-header;
+
+  nav {
+    .nav-link,
+    .navbar-brand {
+      color: v.$color-texto-header;
+
+      &:hover {
+        color: #f9e2e2;
+      }
+    }
+
+    .navbar-toggler {
+      border: 1px solid v.$color-texto-header;
+      background-color: transparent;
+      width: 45px; 
+      height: 40px;
+
+      .navbar-toggler-icon {
+        background-image: none;
+        width: 20px;
+        height: 2px;
+        background-color: v.$color-texto-header;
+        position: relative;
+        display: block;
+
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          background-color: v.$color-texto-header;
+          width: 20px;
+          height: 2px;
+          position: absolute;
+          left: 0;
+        }
+
+        &::before {
+          top: -8px;
+        }
+
+        &::after {
+          top: 8px;
+        }
+      }
+    }
   }
 }
 
 // Contenido principal
 main {
-  background-color: v.$color-fondo;
+  background: linear-gradient(90deg, #9d8d8d, #000000, #b0c1cd);
+  background-size: 200% 100%;
+  background-position: left center;
+  animation: gradiente-suave 50s ease-in-out infinite;
   font-family: v.$fuente-principal;
-  padding: 50px;
+  padding: 40px;
+  color: white;
+  h1 {
+    color: #f9e2e2;
+  }
+  h2 {
+    color: #cbdeec;
+  }
 
   // Sección de introducción
   .intro {
@@ -39,6 +84,18 @@ main {
     }
   }
 }
+@keyframes gradiente-suave {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center;
+  }
+  100% {
+    background-position: left center;
+  }
+}
+
 
 // Estilos del botón personalizado
 .mi-boton {
@@ -63,7 +120,7 @@ main {
 
 // Pie de página
 footer {
-  background-color: v.$color-footer;
+  background-color: v.$color-header-footer;
   font-family: v.$fuente-principal;
   font-weight: bold;
   text-align: center;
