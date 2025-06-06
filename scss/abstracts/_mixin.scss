@@ -1,11 +1,10 @@
 @use 'sass:color';
 
 @mixin estilo-boton($mapa) {
-  color: #202529;
-  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
+  color: white;
+  background: linear-gradient(90deg, #564d4d, #000000, #4e565c);
   background-size: 200% 100%;
   background-position: left center;
-  animation: gradiente-suave 10s ease-in-out infinite;
 
   border-radius: map-get($mapa, border-radius);
   border: none;
@@ -19,3 +18,4 @@
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   }
 }
+$color-header-footer: #222222;

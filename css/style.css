@@ -30,12 +30,29 @@
     background-position: left center;
   }
 }
-.card .btn-primary {
+.mi-boton {
   color: #202529;
   background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
   background-size: 200% 100%;
   background-position: left center;
-  animation: gradiente-suave 10s ease-in-out infinite;
+  animation: gradiente-suave 20s ease-in-out infinite;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+.mi-boton:hover {
+  background-position: right center;
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .btn-primary {
+  color: white;
+  background: linear-gradient(90deg, #564d4d, #000000, #4e565c);
+  background-size: 200% 100%;
+  background-position: left center;
   border-radius: 30px;
   border: none;
   padding: 10px 20px;
@@ -128,9 +145,14 @@ main {
 }
 main h1 {
   color: #f9e2e2;
+  font-weight: 600;
 }
 main h2 {
   color: #cbdeec;
+  font-weight: 600;
+}
+main h4 {
+  font-weight: 600;
 }
 main .intro {
   max-width: 50%;
@@ -155,24 +177,23 @@ main .intro {
     background-position: left center;
   }
 }
-.mi-boton {
-  color: #202529;
-  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
-  background-size: 200% 100%;
-  background-position: left center;
-  animation: gradiente-suave 20s ease-in-out infinite;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-weight: 500;
-  transition: all 0.4s ease;
-}
-.mi-boton:hover {
-  background-position: right center;
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.pluma-animada {
+  animation: girarPluma 2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
 }
 
+@keyframes girarPluma {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
 footer {
   background-color: #222222;
   font-family: "Lato", sans-serif;

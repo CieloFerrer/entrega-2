@@ -66,9 +66,14 @@ main {
   color: white;
   h1 {
     color: #f9e2e2;
+    font-weight: 600;
   }
   h2 {
     color: #cbdeec;
+    font-weight: 600;
+  }
+  h4 {
+    font-weight: 600;
   }
 
   // Sección de introducción
@@ -96,25 +101,22 @@ main {
   }
 }
 
+// Imagen pluma animada
+.pluma-animada {
+  animation: girarPluma 2s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
 
-// Estilos del botón personalizado
-.mi-boton {
-  color: #202529;
-  background: linear-gradient(90deg, #f9e2e2, #cbdeec, #f5c6cf, #f9e2e2);
-  background-size: 200% 100%;
-  background-position: left center;
-  animation: gradiente-suave 20s ease-in-out infinite;
-
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-weight: 500;
-  transition: all 0.4s ease;
-
-  &:hover {
-    background-position: right center;
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+@keyframes girarPluma {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
   }
 }
 
