@@ -177,6 +177,11 @@ main .intro {
     background-position: left center;
   }
 }
+.botella-info {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .pluma-animada {
   animation: girarPluma 2s ease-in-out infinite;
   transform-origin: center;

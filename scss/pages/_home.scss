@@ -101,6 +101,12 @@ main {
   }
 }
 
+// Padding textos proyectos
+.botella-info {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 // Imagen pluma animada
 .pluma-animada {
   animation: girarPluma 2s ease-in-out infinite;
